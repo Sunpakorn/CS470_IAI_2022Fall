@@ -4,7 +4,7 @@
 
 # Tutorial Links
 - [Tutorial 1](https://github.com/pidipidi/CS470_IAI_2022Fall/tree/main/tutorial1)
-- [Tutorial 2](tutorial_2/README.md)
+- [Tutorial 2](https://github.com/pidipidi/CS470_IAI_2022Fall/tree/main/tutorial_2)
 - [Tutorial 3](tutorial_3/README.md)
 
 # Assignment Links
