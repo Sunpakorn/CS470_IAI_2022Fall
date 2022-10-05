@@ -3,8 +3,8 @@
 # Installation
 
 # Tutorial Links
-- [Tutorial 1](https://github.com/pidipidi/CS470_IAI_2022Fall/tree/main/tutorial1)
-- [Tutorial 2](https://github.com/pidipidi/CS470_IAI_2022Fall/tree/main/tutorial_2)
+- [Tutorial 1](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/tutorial_1/MLP_tutorial.ipynb/)
+- [Tutorial 2](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/tutorial_2/RL_tutorial.ipynb/)
 - [Tutorial 3](tutorial_3/README.md)
 
 # Assignment Links
@@ -15,6 +15,9 @@
 - [Assignment 3](assignment_3/README.md)
 - [Assignment 4](assignment_4/README.md)
 - [Assignment 6](assignment_6/README.md)
+
+# Assignment Solution Links
+- [Assignment 1](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/assignment_1/mlp_solution.ipynb/)
 
 
 # ETC
