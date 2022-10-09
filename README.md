@@ -12,9 +12,9 @@
 - [Assignment 2-1](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/assignment_2/CNN_problem_1.ipynb/)
 - [Assignment 2-2](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/assignment_2/CNN_problem_2.ipynb/)
 - [Assignment 2-3](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/assignment_2/CNN_problem_3.ipynb/)
-- [Assignment 3](assignment_3/README.md)
+- [Assignment 3](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/assignment_3/CS470_Assignment3_problem.ipynb/)
 - [Assignment 4](assignment_4/README.md)
-- [Assignment 6](assignment_6/README.md)
+- [Assignment 5](assignment_6/README.md)
 
 # Assignment Solution Links
 - [Assignment 1](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/assignment_1/mlp_solution.ipynb/)
