@@ -20,6 +20,7 @@
 - [Assignment 1](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/assignment_1/mlp_solution.ipynb/)
 
 # Quiz
+- [Tutorial Quiz 1](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/tutorial_2/tutorial2_quiz.ipynb/)
 - [Tutorial Quiz 2](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/tutorial_2/tutorial2_quiz.ipynb/)
 
 # ETC
