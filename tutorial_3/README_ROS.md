@@ -75,7 +75,7 @@ roscd CS470_IAI_2022Fall/src
 ~~~~
 Note that 'roscd' works after loading the ROS' environment setup.
 <p>&nbsp;</p>
-(https://github.com/pidipidi/cs470_IAI/edit/main/tutorial_3/ros_topic.png )
+(https://github.com/pidipidi/CS470_IAI_2022Fall/edit/main/tutorial_3/ros_topic.png )
 
 ## Python
 Please, create the publisher file:
@@ -185,7 +185,7 @@ rostopic echo chatter
 
 ## 3. Service
 
-(https://github.com/pidipidi/cs470_IAI/edit/main/tutorial_3/ros_service.png )
+(https://github.com/pidipidi/CS470_IAI_2022Fall/edit/main/tutorial_3/ros_service.png )
 Let's test ROS service! ROS service is a kind of hand-shake system between a server and a client, where the service server responses given the service client's request. By using these, you can prevent to loose information during important communication. 
 You will be able to see example service code from service_server.py and service_client.py. Please, try to run following commands after checking the code. 
 
@@ -290,7 +290,7 @@ rosservice call /tutorial3 "data: false"
 
 ## 4. Parameter
 
-(https://github.com/pidipidi/cs470_IAI/edit/main/tutorial_3/param.png )
+(https://github.com/pidipidi/CS470_IAI_2022Fall/edit/main/tutorial_3/param.png )
 
 Let's test a ROS parameter server! In more detail, A ROS parameter server is a type of shared dictionary services over ROS nodes. This is often used for data sharing between nodes that do not require strict real-time constraints. Please, be aware that storing and retrieving are not such fast enough to communicate information at runtime. 
 
