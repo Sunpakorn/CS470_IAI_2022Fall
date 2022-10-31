@@ -18,7 +18,7 @@ catkin_init_workspace
 
 Let's copy the the class repo, install dependencies, and build it!
 ~~~~bash
-git clone https://github.com/pidipidi/cs470_IAI.git
+git clone git@github.com:pidipidi/CS470_IAI_2022Fall.git
 cd ..
 rosdep install --from-paths src --ignore-src --rosdistro=noetic -y
 catkin_make
