@@ -6,7 +6,7 @@ Please, install Ubuntu 20.04 and ROS Noetic by following the instrcutions on htt
 
 ## Installation of your project repository
 ~~~~bash
-source /opt/ros/melodic/setup.sh
+source /opt/ros/noetic/setup.sh
 ~~~~
 
 Move to anyfolder you want to place the class code. Then, you can create the workspace,
@@ -18,23 +18,10 @@ catkin_init_workspace
 
 Let's copy the the class repo, install dependencies, and build it!
 ~~~~bash
-git clone git@github.com:pidipidi/CS470_IAI_2022Fall.git
 cd ..
-rosdep install --from-paths src --ignore-src --rosdistro=noetic -y
 catkin_make
 ~~~~
 If you want catkin_build, you can use it instead of catkin_make.
-
-Lastly, load the new environmental variables and also add to path the environmental setup to your bashrc
-~~~~bash
-source ./devel/setup.bash
-echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc
-~~~~
-
-You can verify your ROS install by confirming the environmental variables
-~~~~bash
-env| grep ROS
-~~~~
 
 Make sure that if ROS_MASTER_URI and ROS_ROOT, ETC are in your bashrc.
 ~~~~bash
