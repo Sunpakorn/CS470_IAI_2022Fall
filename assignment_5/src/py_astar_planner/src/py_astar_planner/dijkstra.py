@@ -118,7 +118,7 @@ def get_robot_indices(state, robot_size, grid_limits):
             area.append(x*grid_limits[1][1]+y)
     return area
 
-def astar_planning(start, goal, actions, grid_limits,
+def dijkstra_planning(start, goal, actions, grid_limits,
                    costmap, robot_size, threshold, **kwargs):
     """ 
     A function to generate a path from a start to a goal 
@@ -220,12 +220,12 @@ def astar_planning(start, goal, actions, grid_limits,
             # node = DEFINE_NODE_WITH_F_VALUE
             # ...
             # ADD_THE_NODE_TO_OPENSET
-            # Otherwise if it is already in the open set
 
 
 
 
 
+            
             #------------------------------------------------------------
 
     global CLOSED_SET, OPEN_SET
@@ -247,7 +247,8 @@ def astar_planning(start, goal, actions, grid_limits,
 
 
 
-        
+
+    
     #------------------------------------------------------------
     
     return path[::-1]
@@ -338,7 +339,7 @@ if __name__ == '__main__':
     grid_limits = [[0, 0], [H, W]] 
     actions = [[-1,0], [0,-1], [1,0], [0,1]]
 
-    path = astar_planning(start, goal, actions,
+    path = dijkstra_planning(start, goal, actions,
                               grid_limits,
                               costmap, robot_size,
                               threshold)
