@@ -343,4 +343,4 @@ if __name__ == '__main__':
                               costmap, robot_size,
                               threshold)
 
-    plot_trajs((H,W), [path], costmap, list(CLOSED_SET.keys()) + list(OPEN_SET.keys()))
+    plot_trajs((H,W), [path], costmap, list(CLOSED_SET.keys())) # + list(OPEN_SET.keys()))
