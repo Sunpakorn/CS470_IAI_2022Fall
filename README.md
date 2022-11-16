@@ -14,7 +14,7 @@
 - [Assignment 2-3](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/assignment_2/CNN_problem_3.ipynb/)
 - [Assignment 3](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/assignment_3/CS470_Assignment3_problem.ipynb/)
 - [Assignment 4](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/assignment_4/CS470_Assignment4_problem.ipynb/)
-- [Assignment 5](https://github.com/pidipidi/CS470_IAI_2022Fall/blob/main/assignment_5/src/py_astar_planner/src/py_astar_planner/astar.py)
+- [Assignment 5](https://github.com/pidipidi/CS470_IAI_2022Fall/tree/main/assignment_5/README.md)
 
 # Assignment Solution Links
 - [Assignment 1](https://githubtocolab.com/pidipidi/CS470_IAI_2022Fall/blob/main/assignment_1/mlp_solution.ipynb/)
