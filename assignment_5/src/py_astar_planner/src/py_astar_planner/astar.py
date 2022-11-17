@@ -66,7 +66,7 @@ def is_valid(state, grid_limits, costmap, robot_size, threshold):
         each limit is a list of float values.
         (e.g., [[0,0,0],[max_x,max_y,max_z]])
     costmap : list
-        a flattened array of the cost map.
+        a flattened array of the collision-cost map.
     robot_size : float
         a radius of a robot. This value is used for collision checking.       
 
@@ -138,7 +138,7 @@ def astar_planning(start, goal, actions, grid_limits,
         each limit is a list of float values.
         (e.g., [[min_x,_min_y,min_z],[max_x,max_y,max_z]])
     costmap : array 
-        a flattened array of the cost map.
+        a flattened array of the collision-cost map.
     robot_size : float
         a radius of a robot. This value is used for collision checking.       
 
