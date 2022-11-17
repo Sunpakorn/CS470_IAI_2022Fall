@@ -65,8 +65,8 @@ def is_valid(state, grid_limits, costmap, robot_size, threshold):
         a list of minimum and maximum configuration limits, where
         each limit is a list of float values.
         (e.g., [[0,0,0],[max_x,max_y,max_z]])
-    costmap : 2D list
-        a cost map of obstacles.
+    costmap : list
+        a flattened array of the collision-cost map.
     robot_size : float
         a radius of a robot. This value is used for collision checking.       
 
@@ -137,8 +137,8 @@ def dijkstra_planning(start, goal, actions, grid_limits,
         a list of minimum and maximum configuration limits, where
         each limit is a list of float values.
         (e.g., [[min_x,_min_y,min_z],[max_x,max_y,max_z]])
-    costmap : n-dimensional array 
-        a costmap.
+    costmap : array 
+        a flattened array of the collision-cost map.
     robot_size : float
         a radius of a robot. This value is used for collision checking.       
 
