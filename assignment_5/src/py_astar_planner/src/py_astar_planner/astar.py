@@ -189,11 +189,10 @@ def astar_planning(start, goal, actions, grid_limits,
         # cur_node = GET_A_NODE_WITH_THE_INDEX_FROM_OPENSET
         #
         # if cur_node is the goal node then break
-
-
-
-
-
+        cur_idx = min(openset.items(), key = lambda x: x[1].cost + x[1].h)[0]
+        cur_node = openset[cur_idx]
+        if cur_node.idx == goal_node.idx:
+            break
         
         #------------------------------------------------------------
 
@@ -221,11 +220,19 @@ def astar_planning(start, goal, actions, grid_limits,
             # ...
             # ADD_THE_NODE_TO_OPENSET
             # Otherwise if it is already in the open set
-
-
-
-
-
+            next_pos = cur_node.pos + action
+            next_idx = get_grid_index(next_pos, grid_limits)
+            if next_idx in closedset.keys():
+                pass
+            else:
+                if is_valid(next_pos, grid_limits, costmap, robot_size, threshold):
+                    cost_to = cur_node.cost + 1 #abs(sum(action))
+                    next_node = Node(next_pos, next_idx, cost_to, np.linalg.norm(np.array(next_pos)-goal), cur_idx)
+                    if next_node.idx in openset.keys():
+                        if next_node.cost < openset[next_idx].cost:
+                            openset[next_idx] = next_node
+                    else:
+                        openset[next_idx] = next_node
             #------------------------------------------------------------
 
     global CLOSED_SET, OPEN_SET
@@ -244,10 +251,13 @@ def astar_planning(start, goal, actions, grid_limits,
     # ...
     # while ....
     #     path.append(...)
-
-
-
-        
+    current = cur_node
+    while current.prev_idx != -1:
+        prev_idx = current.prev_idx
+        prev_node = closedset[prev_idx]  
+        path.append(prev_node.pos.tolist())
+        current = prev_node
+    print(len(closedset))
     #------------------------------------------------------------
     
     return path[::-1]
@@ -331,8 +341,8 @@ def plot_trajs(map_size, trajectories, costmap, visited_nodes):
 if __name__ == '__main__':
     cost_map_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'map.txt')   
     costmap , (H, W) = read_cost_map(cost_map_path)
-    start = [3, 3]
-    goal  = [2, 17]
+    start = [10, 11]
+    goal  = [18, 3]
     robot_size = 1
     threshold  = 0.0
     grid_limits = [[0, 0], [H, W]] 
@@ -344,3 +354,4 @@ if __name__ == '__main__':
                               threshold)
 
     plot_trajs((H,W), [path], costmap, list(CLOSED_SET.keys())) # + list(OPEN_SET.keys()))
+    
